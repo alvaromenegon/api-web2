@@ -23,9 +23,9 @@ app.use(
     })
 )
 
-app.listen(8081, function(){
-        console.log("Servidor no http://localhost:8081")
-});
+var porta = process.env.PORT || 8081;
+
+app.listen(porta);
 
 
 //var receitas = unirest.get('http://localhost:8081/api/receitas');
